@@ -47,7 +47,7 @@ My final model used polynomial features and ridge regularization on the selected
 
 ## Evaluation
 
-Overall, the most accurate models were the first model and the second model, which had accuracy scores of 84%. These models also had the lowest log loss and the highest precision and recall scores. The next best was the third model, which had an accuracy score of 83%. All of these models beat the baseline dummy classifier, which had an accuracy score of 79%. 
+Overall, the most accurate models were the first model and the second model, which had accuracy scores of 84%. These models also had the lowest log loss. The third model had the highest recall score, but it had lower precision and accuracy than the first two models. Because accuracy score was my most important metric, the first two models were stronger. All of these models beat the baseline dummy classifier, which had an accuracy score of 79%. 
 
 To create my recommendations, I used investigated the strength of the coefficients for each variable from my first model. The first and second models had virtually identical performance in terms of all the classification metrics. I decided to use the first model because it was more inclusive.
 
