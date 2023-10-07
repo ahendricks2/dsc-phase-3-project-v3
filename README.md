@@ -5,8 +5,6 @@ October 2023
 
 Andrew Hendricks (andrewhhendricks@gmail.com)
 
-GitHub: https://github.com/ahendricks2/dsc-phase-3-project-v3
-
 Non-Technical Presentation: https://docs.google.com/presentation/d/1DO3q7NLQlQhLXU-m109f83YQLVI_L7PI/edit?usp=sharing&ouid=106491021188736703963&rtpof=true&sd=true
 
 
