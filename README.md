@@ -31,12 +31,19 @@ For my model, class 1 was that someone got the H1N1 vaccine and class 0 was that
 
 My first model was a dummy classifier. The majority class within the data set was class zero at 79%, so the classifier had a 79% accuracy score.
 
+<img width="323" alt="Dummy" src="https://github.com/ahendricks2/dsc-phase-3-project-v3/assets/141271148/d996b78c-3b57-4571-abb9-648d9ef5b798">
+
 My second model used a logistic regression on all columns.
+
+<img width="326" alt="fsm" src="https://github.com/ahendricks2/dsc-phase-3-project-v3/assets/141271148/c4a42663-b994-4055-a791-7e4404d71dcf">
 
 My third model used a logistic regression on columns that I selected after using lasso regularization on all columns to determine which variables had the weakest impact.
 
+<img width="318" alt="sm" src="https://github.com/ahendricks2/dsc-phase-3-project-v3/assets/141271148/cf66ace8-07db-4839-9262-3a1a7f6d62a5">
+
 My final model used polynomial features and ridge regularization on the selected columns from the third model.
 
+<img width="322" alt="tm" src="https://github.com/ahendricks2/dsc-phase-3-project-v3/assets/141271148/030eccf5-2fef-49f6-b8b7-7a202eeb6a35">
 
 ## Evaluation
 
