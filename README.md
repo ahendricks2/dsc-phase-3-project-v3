@@ -27,11 +27,11 @@ All of the columns in the data set could be treated as categoricals. After data 
 
 ## Modeling
 
-For my model, class 1 was that someone got the H1N1 vaccine and class 0 was that they did not. I used test train split to train and test my model and used pipelines to handle one hot encoding and simple imputing.  My most important classification metric was the accuracy score, but I also reviewed precision, recall, F1, ROC AUC, and log loss when evaluating the preformance of my models.
+
 
 My first model was a dummy classifier. The majority class within the data set was class zero at 79%, so the classifier had a 79% accuracy score.
 
-<img width="323" alt="Dummy" src="https://github.com/ahendricks2/dsc-phase-3-project-v3/assets/141271148/d996b78c-3b57-4571-abb9-648d9ef5b798">
+
 
 My second model used a logistic regression on all columns.
 
@@ -45,9 +45,13 @@ My final model used polynomial features and ridge regularization on the selected
 
 <img width="322" alt="tm" src="https://github.com/ahendricks2/dsc-phase-3-project-v3/assets/141271148/030eccf5-2fef-49f6-b8b7-7a202eeb6a35">
 
-## Evaluation
+## Modeling and Evaluation
 
-Overall, the most accurate models were the first model and the second model, which had accuracy scores of 84%. These models also had the lowest log loss. The third model had the highest recall score, but it had lower precision and accuracy than the first two models. Because accuracy score was my most important metric, the first two models were stronger. All of these models beat the baseline dummy classifier, which had an accuracy score of 79%. 
+For my model, class 1 was that someone got the H1N1 vaccine and class 0 was that they did not. I used test train split to train and test my model and used pipelines to handle one hot encoding and simple imputing.  My most important classification metric was the accuracy score, but I also reviewed precision, recall, F1, ROC AUC, and log loss when evaluating the preformance of my models.
+
+Overall, the most accurate models were the first model and the second model, which had accuracy scores of 84%. These models also had the lowest log loss. The third model had the highest recall score, but it had lower precision and accuracy than the first two models. Because accuracy score was my most important metric, the first two models were stronger. All of these models beat the baseline dummy classifier, which had an accuracy score of 79%. I selected my first model because it contained all of the features, which would make my following analysis of probabilities more thorough. Here was the classification report for that model:
+
+<img width="323" alt="Dummy" src="https://github.com/ahendricks2/dsc-phase-3-project-v3/assets/141271148/d996b78c-3b57-4571-abb9-648d9ef5b798">
 
 To create my recommendations, I used investigated the strength of the coefficients for each variable from my first model. The first and second models had virtually identical performance in terms of all the classification metrics. I decided to use the first model because it was more inclusive.
 
