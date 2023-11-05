@@ -5,7 +5,7 @@ October 2023
 
 Andrew Hendricks (andrewhhendricks@gmail.com)
 
-Non-Technical Presentation: https://docs.google.com/presentation/d/1DO3q7NLQlQhLXU-m109f83YQLVI_L7PI/edit?usp=sharing&ouid=106491021188736703963&rtpof=true&sd=true
+[Non-Technical Presentation](https://docs.google.com/presentation/d/1DO3q7NLQlQhLXU-m109f83YQLVI_L7PI/edit?usp=sharing&ouid=106491021188736703963&rtpof=true&sd=true)
 
 
 ## Overview
@@ -31,16 +31,23 @@ For my model, class 1 was that someone got the H1N1 vaccine and class 0 was that
 
 My first model was a dummy classifier. The majority class within the data set was class zero at 79%, so the classifier had a 79% accuracy score.
 
+<img width="323" alt="Dummy" src="https://github.com/ahendricks2/dsc-phase-3-project-v3/assets/141271148/d996b78c-3b57-4571-abb9-648d9ef5b798">
+
 My second model used a logistic regression on all columns.
+
+<img width="326" alt="fsm" src="https://github.com/ahendricks2/dsc-phase-3-project-v3/assets/141271148/c4a42663-b994-4055-a791-7e4404d71dcf">
 
 My third model used a logistic regression on columns that I selected after using lasso regularization on all columns to determine which variables had the weakest impact.
 
+<img width="318" alt="sm" src="https://github.com/ahendricks2/dsc-phase-3-project-v3/assets/141271148/cf66ace8-07db-4839-9262-3a1a7f6d62a5">
+
 My final model used polynomial features and ridge regularization on the selected columns from the third model.
 
+<img width="322" alt="tm" src="https://github.com/ahendricks2/dsc-phase-3-project-v3/assets/141271148/030eccf5-2fef-49f6-b8b7-7a202eeb6a35">
 
 ## Evaluation
 
-Overall, the most accurate models were the first model and the second model, which had accuracy scores of 84%. These models also had the lowest log loss and the highest precision and recall scores. The next best was the third model, which had an accuracy score of 83%. All of these models beat the baseline dummy classifier, which had an accuracy score of 79%. 
+Overall, the most accurate models were the first model and the second model, which had accuracy scores of 84%. These models also had the lowest log loss. The third model had the highest recall score, but it had lower precision and accuracy than the first two models. Because accuracy score was my most important metric, the first two models were stronger. All of these models beat the baseline dummy classifier, which had an accuracy score of 79%. 
 
 To create my recommendations, I used investigated the strength of the coefficients for each variable from my first model. The first and second models had virtually identical performance in terms of all the classification metrics. I decided to use the first model because it was more inclusive.
 
